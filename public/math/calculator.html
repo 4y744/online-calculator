@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/math/calculator.css">
+    <script src="https://kit.fontawesome.com/af2548a023.js" crossorigin="anonymous"></script>
+    <script src="/js/math/calculator.js" defer></script>
+    <script src="/navbar.js" defer></script>
+    <script src="/footer.js" defer></script>
+</head>
+<body>
+    <nav></nav>
+    <article>
+        <div class="calculator">
+            <span class="saved-input" id="saved-input">0</span>
+            <span class="input-box" id="input-box">0</span>
+            <div class="button-container">
+                <div class="row">
+                    <button onclick="toPercent()">%</button>
+                    <button onclick="clearInput()">C</button>
+                    <button onclick="calculate('/')">÷</button>
+                    <button onclick="clearLast()">⌫</button>
+                </div>
+                <div class="row">
+                    <button onclick="addDigit(7)">7</button>
+                    <button onclick="addDigit(8)">8</button>
+                    <button onclick="addDigit(9)">9</button>
+                    <button onclick="calculate('*')">×</button>
+                </div>
+                <div class="row">
+                    <button onclick="addDigit(4)">4</button>
+                    <button onclick="addDigit(5)">5</button>
+                    <button onclick="addDigit(6)">6</button>
+                    <button onclick="calculate('-')">-</button>
+                </div>
+                <div class="row">
+                    <button onclick="addDigit(1)">1</button>
+                    <button onclick="addDigit(2)">2</button>
+                    <button onclick="addDigit(3)">3</button>
+                    <button onclick="calculate('+')">+</button>
+                </div>
+                <div class="row">
+                    <button onclick="changeSign()">+/-</button>
+                    <button onclick="addDigit(0)">0</button>
+                    <button onclick="addDecimalSeparator()">.</button>
+                    <button onclick="equals()">=</button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+footer{
+    --primary-color:#24252A;
+    --secondary-color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+
+    bottom: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    padding: 20px 0;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 200px;
+}
+
+.footer-container-title{
+
+}
+
+.footer-container-link{
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-container-link:hover{
+    text-decoration: underline;
+}
