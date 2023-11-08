@@ -1,0 +1,55 @@
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lcm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-box{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+
+    width: 300px;
+    height: 150px;
+
+    border: none;
+    outline: 1px solid var(--primary-color);
+
+    resize: none;
+}
+
+.calculate-button{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+
+    padding: 0 10px;
+    margin: 10px 0;
+
+    border: none;
+
+    height: 80px;
+}
+
+button:hover{
+    opacity: 0.95;
+}
+
+button:active{
+    opacity: 0.9;
+}
+
+.output-label{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+
+    color: var(--primary-color);
+}
