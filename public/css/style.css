@@ -6,5 +6,11 @@ body{
 
 article{
     min-height: 80vh;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+
+    --primary-color:#24252A;
+    --secondary-color: white;
 }
 

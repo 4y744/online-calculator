@@ -2,18 +2,13 @@ const input_box = document.getElementById("input-box");
 const saved_input = document.getElementById("saved-input");
 let num1, num2;
 let savedOperation = "";
+
 const operationFunctions = new Map([
     ["+", (a, b) => a + b],
     ["-", (a, b) => a - b],
-    ["*", (a, b) => a * b],
-    ["/", (a, b) => a / b]
+    ["×", (a, b) => a * b],
+    ["÷", (a, b) => a / b]
   ]);
-const operationSymbols = new Map([
-    ["+", "+"],
-    ["-", "-"],
-    ["*", "×"],
-    ["/", "÷"]
-]);
 
 function addDigit(char)
 {
@@ -51,24 +46,29 @@ function toPercent()
     input_box.innerText = Math.abs(parseFloat(input_box.innerText) / 100);
 }
 
-function calculate(operation)
+function queueOperation(operation)
 {   
     if(num1 == null) num1 = parseFloat(input_box.innerText);
     else if(savedOperation != "")
     {
-        num2 = parseFloat(input_box.innerText);
-        num1 = operationFunctions.get(savedOperation)(num1, num2);
+        calculate();
     }
     savedOperation = operation;
     input_box.innerText = "0";
-    saved_input.innerText = `${num1} ${operationSymbols.get(operation)}`;
+    saved_input.innerText = `${num1} ${operation}`;
 }
 
 function equals()
 {
-    num2 = parseFloat(input_box.innerText);
-    num1 = operationFunctions.get(savedOperation)(num1, num2);
+    calculate();
     savedOperation = "";
     input_box.innerText = num1;
     saved_input.innerText = "0 +";
+}
+
+function calculate()
+{
+    num2 = parseFloat(input_box.innerText);
+    num1 = operationFunctions.get(savedOperation)(num1, num2);
+    num1 = parseFloat(num1.toPrecision(12));
 }

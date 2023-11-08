@@ -1,12 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
 article{
-    font-family: 'Inter', sans-serif;
-    font-size: 24px;
-
-    --primary-color:#24252A;
-    --secondary-color: white;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,6 +9,20 @@ article{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.saved-input{
+    height: 40px;
+    width: 100%;
+
+    box-sizing: border-box;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    border: 1px solid var(--primary-color);
 }
 
 .input-box{
