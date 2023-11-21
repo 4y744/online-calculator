@@ -18,16 +18,21 @@ article{
     align-items: center;
     flex-direction: column;
 
-    color: var(--secondary-color);
+    color: white;
     text-decoration: none;
 
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color) 50%, var(--secondary-color) 50%);
+    background-size: 200% 200%;
+}
 
-    transition: box-shadow 200ms;
+@keyframes link-container-hover {
+    0%{background-position:0% 0%}
+    100%{background-position:50% 50%}
 }
 
 .link-container:hover{
-    box-shadow: 1px 2px 5px var(--primary-color);
+    animation: link-container-hover 200ms ease-in-out;
+    background-position: 50% 50%;
 }
 
 .link-title{

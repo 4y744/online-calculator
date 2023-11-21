@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
 
 footer{
     --primary-color:#24252A;
-    --secondary-color: white;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    font-family: 'Inter', sans-serif;
+    --secondary-color: #e42821;
+
+    background: linear-gradient(135deg, var(--primary-color) 50%, var(--secondary-color) 50%);
+    color: white;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
 
     bottom: 0;
@@ -33,7 +34,7 @@ footer{
 }
 
 .footer-container-link{
-    color: var(--secondary-color);
+    color: white;
     text-decoration: none;
     margin: 5px 0;
     width: 100%;

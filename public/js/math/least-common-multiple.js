@@ -4,16 +4,14 @@ let input, num1, num2, lcm;
 
 function calculate()
 {
-    input = input_box.value.split(/(?:,| )+/);
+    input = input_box.value.split(/(?:,|[.]| |[a-z])+/);
+    input = input.filter(val => val !== "");
     input = input.filter(val => val !== "0");
 
-    for(let i = 0; i < input.length; i++)
+    lcm = parseFloat(input[0]);
+
+    for(let i = 1; i < input.length; i++)
     {
-        if(i == 0) 
-        {
-            lcm = parseFloat(input[i]);
-            continue;
-        }
         num1 = lcm;
         num2 = parseFloat(input[i]);
         while(num1 != num2)

@@ -4,12 +4,16 @@ let input, num1, num2;
 
 function calculate()
 {
-    input = input_box.value.split(/(?:,| )+/);
+    input = input_box.value.split(/(?:,|[.]| |[a-z])+/);
+    input = input.filter(val => val !== "");
     input = input.filter(val => val !== "0");
 
-    for(let i = 0; i < input.length; i++)
+    if(input.length < 2) return;
+
+    num1 = parseFloat(input[0]);
+
+    for(let i = 1; i < input.length; i++)
     {
-        if(i == 0) {num1 = parseFloat(input[i]); continue;}
         num2 = parseFloat(input[i]);
         while(num1 != num2)
         {

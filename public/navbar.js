@@ -18,7 +18,7 @@ let navbar = `
         </a>
     </li>
     <li class="nav-item">
-        <a href="#">
+        <a href="/physics.html">
             <i class="fa-solid fa-atom"></i>
             <span class="nav-text">Physics</span>
         </a>
