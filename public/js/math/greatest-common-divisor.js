@@ -4,7 +4,7 @@ let input, num1, num2;
 
 function calculate()
 {
-    input = input_box.value.split(/(?:,|[.]| |[a-z])+/);
+    input = input_box.value.split(/(?:,|[.]| |[a-z]|[\n])+/);
     input = input.filter(val => val !== "");
     input = input.filter(val => val !== "0");
 

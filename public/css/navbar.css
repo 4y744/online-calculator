@@ -38,8 +38,7 @@ nav{
 }
 
 .nav-item:nth-child(n + 2):hover a{
-    color: var(--primary-color);
-    background-color: white;
+    background-color: var(--secondary-color);
 }
 
 .nav-text{
@@ -48,6 +47,10 @@ nav{
 
 .nav-item:nth-child(1) a{
     padding: 0.5rem;
+}
+
+.nav-item:nth-child(1) img{
+    height: 35px;
 }
 
 .brand{
@@ -103,5 +106,8 @@ nav{
     .navbar{
         flex-direction: row;
         flex-wrap: wrap;
+    }
+    .nav-item:nth-child(2){
+       width: 100%;
     }
 }

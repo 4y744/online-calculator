@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/math/greatest-common-divisor.css">
+    <link rel="stylesheet" href="/css/math/root-calculator.css">
     <script src="https://kit.fontawesome.com/af2548a023.js" crossorigin="anonymous"></script>
-    <script src="/js/math/greatest-common-divisor.js" defer></script>
+    <script src="/js/math/root-calculator.js" defer></script>
     <script src="/navbar.js" defer></script>
     <script src="/footer.js" defer></script>
 </head>
 <body>
     <nav></nav>
     <article>
-        <div class="gcd">
-            <h2 class="title">Greatest common divisor</h2>
-            <textarea id="input-box" class="input-box" type="text"></textarea>
+        <div class="root-calculator">
+            <h2 class="title">Root calulator</h2>
+            <input class="input-box" type="number" id="num" placeholder="Enter a number...">
+            <input class="input-box" type="number" id="root" placeholder="Enter a root...">
             <button onclick="calculate()" class="calculate-button">Calculate</button>
             <h2 class="output-label" id="output-label">Answer: ---</h2>
         </div>

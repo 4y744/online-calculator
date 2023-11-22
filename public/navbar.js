@@ -2,7 +2,7 @@ let navbar = `
 <ul class="navbar">
     <li class="nav-item">
         <a href="/">
-            <span class="brand">Calculator</span>
+            <img src="/assets/images/logo.png" alt="">
         </a>
     </li>
     <li class="nav-item">

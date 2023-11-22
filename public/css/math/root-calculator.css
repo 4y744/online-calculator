@@ -4,28 +4,39 @@ article{
     align-items: center;
 }
 
-.title{
-    color: var(--primary-color);
-}
-
-.lcm{
+.root-calculator{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.title{
+    color: var(--primary-color);
 }
 
 .input-box{
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
+    appearance: none;
 
-    width: 300px;
-    height: 150px;
+    width: 250px;
+    height: 50px;
+
+    margin: 10px 0;
 
     border: none;
     outline: 1px solid var(--primary-color);
 
     resize: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .calculate-button{
@@ -52,7 +63,6 @@ button:active{
 }
 
 .output-label{
-    font-family: 'Roboto', sans-serif;
     font-size: 24px;
 
     color: var(--primary-color);

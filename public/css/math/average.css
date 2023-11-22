@@ -4,15 +4,17 @@ article{
     align-items: center;
 }
 
-.title{
-    color: var(--primary-color);
-}
-
-.lcm{
+.average{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.title{
+    color: var(--primary-color);
 }
 
 .input-box{
@@ -52,7 +54,6 @@ button:active{
 }
 
 .output-label{
-    font-family: 'Roboto', sans-serif;
     font-size: 24px;
 
     color: var(--primary-color);

@@ -9,6 +9,8 @@ article{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    font-size: 24px;
 }
 
 .saved-input{
@@ -54,7 +56,7 @@ article{
 }
 
 .row button{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
 
     background-color: var(--primary-color);
