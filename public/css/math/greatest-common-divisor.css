@@ -16,7 +16,7 @@ article{
 }
 
 .input-box{
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     font-size: 24px;
 
     width: 300px;
@@ -29,7 +29,7 @@ article{
 }
 
 .calculate-button{
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     font-size: 24px;
 
     background-color: var(--primary-color);
@@ -52,7 +52,6 @@ button:active{
 }
 
 .output-label{
-    font-family: 'Roboto', sans-serif;
     font-size: 24px;
 
     color: var(--primary-color);

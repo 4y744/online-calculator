@@ -4,28 +4,41 @@ article{
     align-items: center;
 }
 
-.title{
-    color: var(--primary-color);
-}
-
-.lcm{
+.calculator{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+.title{
+    color: var(--primary-color);
+}
+
 .input-box{
     font-family: inherit;
     font-size: 24px;
+    appearance: none;
 
-    width: 300px;
-    height: 150px;
+    width: 250px;
+    height: 50px;
+
+    margin: 10px 0;
 
     border: none;
     outline: 1px solid var(--primary-color);
 
     resize: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    appearance: textfield;
 }
 
 .calculate-button{

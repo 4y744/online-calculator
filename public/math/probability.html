@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/math/average.css">
+    <link rel="stylesheet" href="/css/math/probability.css">
     <script src="https://kit.fontawesome.com/af2548a023.js" crossorigin="anonymous"></script>
-    <script src="/js/math/average.js" defer></script>
+    <script src="/js/math/probability.js" defer></script>
     <script src="/navbar.js" defer></script>
     <script src="/footer.js" defer></script>
 </head>
@@ -15,8 +15,13 @@
     <nav></nav>
     <article>
         <div class="calculator">
-            <h2 class="title">Average calculator</h2>
-            <textarea id="input-box" class="input-box" type="text"></textarea>
+            <h2 class="title">Probability calculator</h2>
+            <input class="input-box" type="number" id="k" placeholder="Enter preferred (k)...">
+            <input class="input-box" type="number" id="n" placeholder="Enter all possible (n)...">
+            <div>
+                <label for="count-order">Count order: </label>
+                <input type="checkbox" name="count-order" id="count-order">
+            </div>
             <button onclick="calculate()" class="calculate-button">Calculate</button>
             <h2 class="output-label" id="output-label">Answer: ---</h2>
         </div>

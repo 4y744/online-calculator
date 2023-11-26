@@ -10,7 +10,6 @@ article{
     align-items: center;
     flex-direction: column;
 
-    font-family: 'Roboto', sans-serif;
 }
 
 .title{
@@ -18,7 +17,7 @@ article{
 }
 
 .input-box{
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     font-size: 24px;
     appearance: none;
 
@@ -39,8 +38,12 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+input[type=number] {
+    appearance: textfield;
+}
+
 .calculate-button{
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     font-size: 24px;
 
     background-color: var(--primary-color);

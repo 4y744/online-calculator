@@ -7,6 +7,12 @@ function calculate()
 {
     min = parseFloat(input_min.value);
     max = parseFloat(input_max.value);
+    if(min > max)
+    {
+        let old = min;
+        min = max;
+        max = old;
+    }
     
     rand = Math.floor(Math.random() * (max - min + 1) + min);
     /*

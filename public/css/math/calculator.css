@@ -56,7 +56,7 @@ article{
 }
 
 .row button{
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     font-size: 24px;
 
     background-color: var(--primary-color);
