@@ -14,8 +14,17 @@
 <body>
     <nav></nav>
     <article>
+        <div class="link-tree-container">
+            <a href="/index.html">Home</a>
+            <span> / </span>
+            <a href="/math.html">Math</a>
+            <span> / </span>
+            <a href="/math/calculator.html">Greatest common divisor</a>
+        </div>
+        
+        <p class="page-description">A simple calculator that can do basic mathematic operations.</p>
+
         <div class="gcd">
-            <h2 class="title">Greatest common divisor</h2>
             <textarea id="input-box" class="input-box" type="text"></textarea>
             <button onclick="calculate()" class="calculate-button">Calculate</button>
             <h2 class="output-label" id="output-label">Answer: ---</h2>

@@ -11,4 +11,34 @@ article{
 
     min-height: 80vh;
     font-family: var(--primary-font), sans-serif;
+
+    position: relative;
+
+    margin: 0 auto;
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.link-tree-container{
+    align-self: flex-start;
+}
+
+.link-tree-container a{
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+.link-tree-container a:hover{
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
+.page-description{
+    align-self: flex-start;
+    max-width: 300px;
+    font-size: 18px;
 }

@@ -14,8 +14,17 @@
 <body>
     <nav></nav>
     <article>
+        <div class="link-tree-container">
+            <a href="/index.html">Home</a>
+            <span> / </span>
+            <a href="/math.html">Math</a>
+            <span> / </span>
+            <a href="/math/root-calculator.html">Root calculator</a>
+        </div>
+
+        <p class="page-description">A simple calculator that can do basic mathematic operations.</p>
+        
         <div class="root-calculator">
-            <h2 class="title">Root calulator</h2>
             <input class="input-box" type="number" id="num" placeholder="Enter a number...">
             <input class="input-box" type="number" id="root" placeholder="Enter a root...">
             <button onclick="calculate()" class="calculate-button">Calculate</button>

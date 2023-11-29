@@ -14,8 +14,17 @@
 <body>
     <nav></nav>
     <article>
+        <div class="link-tree-container">
+            <a href="/index.html">Home</a>
+            <span> / </span>
+            <a href="/math.html">Math</a>
+            <span> / </span>
+            <a href="/math/random-number-generator.html">Random number generator</a>
+        </div>
+
+        <p class="page-description">A simple calculator that can do basic mathematic operations.</p>
+
         <div class="random">
-            <h2 class="title">Random number generator</h2>
             <input class="input-box" type="number" id="min" placeholder="Enter min...">
             <input class="input-box" type="number" id="max" placeholder="Enter max...">
             <button onclick="calculate()" class="calculate-button">Calculate</button>

@@ -14,8 +14,16 @@
 <body>
     <nav></nav>
     <article>
+        <div class="link-tree-container">
+            <a href="/index.html">Home</a>
+            <span> / </span>
+            <a href="/math.html">Math</a>
+            <span> / </span>
+            <a href="/math/average.html">Average</a>
+        </div>
+        
+        <p class="page-description">Find the average value of a set of numbers.</p>
         <div class="calculator">
-            <h2 class="title">Average calculator</h2>
             <textarea id="input-box" class="input-box" type="text"></textarea>
             <button onclick="calculate()" class="calculate-button">Calculate</button>
             <h2 class="output-label" id="output-label">Answer: ---</h2>
