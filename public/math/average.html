@@ -5,30 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/math/average.css">
+    <link rel="stylesheet" href="/css/math/common.css">
     <script src="https://kit.fontawesome.com/af2548a023.js" crossorigin="anonymous"></script>
     <script src="/js/math/average.js" defer></script>
-    <script src="/navbar.js" defer></script>
-    <script src="/footer.js" defer></script>
+    <script src="/js/content-injector.js" defer></script>
 </head>
 <body>
     <nav></nav>
     <article>
-        <div class="link-tree-container">
-            <a href="/index.html">Home</a>
-            <span> / </span>
-            <a href="/math.html">Math</a>
-            <span> / </span>
-            <a href="/math/average.html">Average</a>
-        </div>
+        <div class="page-wrapper">
+
+            <div class="left">
+                <div class="link-tree-container">
+                    <a href="/index.html">Home</a>
+                    <span> / </span>
+                    <a href="/math.html">Math</a>
+                    <span> / </span>
+                    <a href="/math/average.html">Average</a>
+                </div>
+                
+                <h2 class="page-title">Average calculator</h2>
         
-        <p class="page-description">Find the average value of a set of numbers.</p>
-        <div class="calculator">
-            <textarea id="input-box" class="input-box" type="text"></textarea>
-            <button onclick="calculate()" class="calculate-button">Calculate</button>
-            <h2 class="output-label" id="output-label">Answer: ---</h2>
+                <div class="calculator-container">
+                    <textarea id="input-box" class="input-field" type="text"></textarea>
+                    <div>
+                        <button onclick="calculate()" class="calculate-button">Calculate</button>
+                        <span class="output-label" id="output-label">0</span>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="right">
+                <h2>What is an average?</h2>
+                <p>An average is a number that represents the middle value of a set of numbers.</p>
+                <p>Average = Sum ÷ Count</p>
+                <p>Example: {3, 4, 5} => (3 + 4 + 5) ÷ 3 = 12 ÷ 3 = 4</p>
+            </div>
+
         </div>
+
+        <div class="related-container"></div>
     </article>
+
+    
     <footer></footer>
 </body>
 </html>

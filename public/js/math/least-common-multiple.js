@@ -9,7 +9,6 @@ function calculate()
     input = input.filter(val => val !== "0");
 
     lcm = parseFloat(input[0]);
-    console.log(input);
 
     for(let i = 1; i < input.length; i++)
     {
@@ -25,5 +24,5 @@ function calculate()
     }
 
 
-   output_label.innerText = `Answer: ${lcm}`;
+   output_label.innerText = `${lcm}`;
 }

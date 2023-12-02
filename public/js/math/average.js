@@ -17,5 +17,5 @@ function calculate()
     }
     num1 /= input.length;
     num1 = parseFloat(num1.toPrecision(12));
-    output_label.innerText = `Answer: ${num1}`;
+    output_label.innerText = num1;
 }

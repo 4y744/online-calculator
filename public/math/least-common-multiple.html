@@ -5,29 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/math/least-common-multiple.css">
+    <link rel="stylesheet" href="/css/math/common.css">
     <script src="https://kit.fontawesome.com/af2548a023.js" crossorigin="anonymous"></script>
     <script src="/js/math/least-common-multiple.js" defer></script>
-    <script src="/navbar.js" defer></script>
-    <script src="/footer.js" defer></script>
+    <script src="/js/content-injector.js" defer></script>
 </head>
 <body>
     <nav></nav>
     <article>
-        <div class="link-tree-container">
-            <a href="/index.html">Home</a>
-            <span> / </span>
-            <a href="/math.html">Math</a>
-            <span> / </span>
-            <a href="/math/least-common-multiple.html">Least common multiple</a>
-        </div>
+        <div class="page-wrapper">
+            <div class="left">
+                <div class="link-tree-container">
+                    <a href="/index.html">Home</a>
+                    <span> / </span>
+                    <a href="/math.html">Math</a>
+                    <span> / </span>
+                    <a href="/math/least-common-multiple.html">Least common multiple</a>
+                </div>
+                
+                <h2 class="page-title">Least common multiple</h2>
         
-        <p class="page-description">A simple calculator that can do basic mathematic operations.</p>
-        <div class="lcm">
-            <textarea id="input-box" class="input-box" type="text"></textarea>
-            <button onclick="calculate()" class="calculate-button">Calculate</button>
-            <h2 class="output-label" id="output-label">Answer: ---</h2>
+                <div class="calculator-container">
+                    <textarea id="input-box" class="input-field" type="text"></textarea>
+                    <div>
+                        <button onclick="calculate()" class="calculate-button">Calculate</button>
+                        <span class="output-label" id="output-label">0</span>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="right">
+                <h2>What is a least common multiple?</h2>
+                <p>A least common multiple is the smallest number divisible by every number in a set of numbers.</p>
+                <p>
+                It can be determined by using the <a href="/math/greatest-common-divisor.html">greatest common divisor</a>.</a>
+                </p>
+                <span>LCM(a, b) = (a × b) ÷ GCD(a, b)</span>
+                <span>Example: LCM(9, 3) = (9 × 3) ÷ GCD(9, 3) = 27 ÷ 3 = 9</span>
+                <p>This is because the LCM is equal to each of the numbers' unique factors multiplied by their common factor.</p>
+                <p>Then the process is repeated by using the value of LCM and the next number in the set.</p>
+            </div>
+
         </div>
+
+        <div class="related-container"></div>
     </article>
     <footer></footer>
 </body>

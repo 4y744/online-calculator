@@ -1,27 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-body{
-    margin: 0;
-}
+/* GLOBAL STYLE SHEET */
 
-article{
+
+body{
     --primary-color:#24252A;
     --secondary-color: #e42821;
     --primary-font: 'Roboto';
 
-    min-height: 80vh;
     font-family: var(--primary-font), sans-serif;
-
-    position: relative;
-
-    margin: 0 auto;
-    width: fit-content;
-
-    display: flex;
-    flex-direction: column;
-
+    margin: 0;
+    
+    min-height: 100vh;
 }
 
+article{   
+    margin: 0 auto;
+    width: fit-content;
+    min-height: 80vh;
+
+    display: flex;
+}
+
+/* A set of styles for a universal link tree */
+
+/* <LINK-TREE> */
 .link-tree-container{
     align-self: flex-start;
 }
@@ -37,8 +40,22 @@ article{
     color: var(--secondary-color);
 }
 
-.page-description{
-    align-self: flex-start;
-    max-width: 300px;
-    font-size: 18px;
+/* </LINK-TREE> */
+
+/* Globally disables spin buttons in input boxes */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
+
+input[type=number] {
+    appearance: textfield;
+}
+
+/* <RELATED-CONTENT> */
+
+
+
+/* </RELATED-CONTENT> */

@@ -5,61 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/math/common.css">
     <link rel="stylesheet" href="/css/math/calculator.css">
-    <script src="https://kit.fontawesome.com/af2548a023.js" crossorigin="anonymous"></script>
     <script src="/js/math/calculator.js" defer></script>
-    <script src="/navbar.js" defer></script>
-    <script src="/footer.js" defer></script>
+    <script src="/js/content-injector.js"></script>
+    <script src="https://kit.fontawesome.com/af2548a023.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav></nav>
     <article>
-        <div class="link-tree-container">
-            <a href="/index.html">Home</a>
-            <span> / </span>
-            <a href="/math.html">Math</a>
-            <span> / </span>
-            <a href="/math/calculator.html">Calculator</a>
-        </div>
-        
-        <p class="page-description">A simple calculator that can do basic mathematic operations.</p>
+        <div class="page-wrapper">
 
-        <div class="calculator">
-            <span class="saved-input" id="saved-input">0</span>
-            <span class="input-box" id="input-box">0</span>
-            <div class="button-container">
-                <div class="row">
-                    <button onclick="toPercent()">%</button>
-                    <button onclick="clearInput()">C</button>
-                    <button onclick="queueOperation('÷')">÷</button>
-                    <button onclick="clearLast()">⌫</button>
+            <div class="left">
+                <div class="link-tree-container">
+                    <a href="/index.html">Home</a>
+                    <span> / </span>
+                    <a href="/math.html">Math</a>
+                    <span> / </span>
+                    <a href="/math/calculator.html">Calculator</a>
                 </div>
-                <div class="row">
-                    <button onclick="addDigit(7)">7</button>
-                    <button onclick="addDigit(8)">8</button>
-                    <button onclick="addDigit(9)">9</button>
-                    <button onclick="queueOperation('×')">×</button>
-                </div>
-                <div class="row">
-                    <button onclick="addDigit(4)">4</button>
-                    <button onclick="addDigit(5)">5</button>
-                    <button onclick="addDigit(6)">6</button>
-                    <button onclick="queueOperation('-')">-</button>
-                </div>
-                <div class="row">
-                    <button onclick="addDigit(1)">1</button>
-                    <button onclick="addDigit(2)">2</button>
-                    <button onclick="addDigit(3)">3</button>
-                    <button onclick="queueOperation('+')">+</button>
-                </div>
-                <div class="row">
-                    <button onclick="changeSign()">+/-</button>
-                    <button onclick="addDigit(0)">0</button>
-                    <button onclick="addDecimalSeparator()">.</button>
-                    <button onclick="equals()">=</button>
-                </div>
+                
+                <h2 class="page-title">Calculator</h2>
+
+                <div class="calculator-wrapper">
+                    <span class="calculator-saved-input" id="saved-input">0</span>
+                    <span class="calculator-input-box" id="input-box">0</span>
+                    <div class="calculator-button-container">
+                        <div class="calculator-button-row">
+                            <button onclick="toPercent()">%</button>
+                            <button onclick="clearInput()">C</button>
+                            <button onclick="queueOperation('÷')">÷</button>
+                            <button onclick="clearLast()">⌫</button>
+                        </div>
+                        <div class="calculator-button-row">
+                            <button onclick="addDigit(7)">7</button>
+                            <button onclick="addDigit(8)">8</button>
+                            <button onclick="addDigit(9)">9</button>
+                            <button onclick="queueOperation('×')">×</button>
+                        </div>
+                        <div class="calculator-button-row">
+                            <button onclick="addDigit(4)">4</button>
+                            <button onclick="addDigit(5)">5</button>
+                            <button onclick="addDigit(6)">6</button>
+                            <button onclick="queueOperation('-')">-</button>
+                        </div>
+                        <div class="calculator-button-row">
+                            <button onclick="addDigit(1)">1</button>
+                            <button onclick="addDigit(2)">2</button>
+                            <button onclick="addDigit(3)">3</button>
+                            <button onclick="queueOperation('+')">+</button>
+                        </div>
+                        <div class="calculator-button-row">
+                            <button onclick="changeSign()">+/-</button>
+                            <button onclick="addDigit(0)">0</button>
+                            <button onclick="addDecimalSeparator()">.</button>
+                            <button onclick="equals()">=</button>
+                        </div>
+                    </div>
+                </div>    
+            </div>          
+
+            <div class="right">
+                <h2>What is an average?</h2>
+                <p>An average is a number that represents the middle value of a set of numbers.</p>
+                <p>Average = Sum ÷ Count</p>
+                <p>Example: {3, 4, 5} => (3 + 4 + 5) ÷ 3 = 12 ÷ 3 = 4</p>
             </div>
+
         </div>
+
+        <div class="related-container"></div>
+       
+
     </article>
     <footer></footer>
 </body>

@@ -21,5 +21,5 @@ function calculate()
             else {num2 -= num1;}
         }
     }
-   output_label.innerText = `Answer: ${num1}`;
+   output_label.innerText = `${num1}`;
 }

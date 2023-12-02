@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
 
 footer{
-    --primary-color:#24252A;
-    --secondary-color: #e42821;
-
+    
     background: linear-gradient(135deg, var(--primary-color) 50%, var(--secondary-color) 50%);
     color: white;
-    font-family: 'Roboto', sans-serif;
     font-size: 18px;
-
-    bottom: 0;
 
     width: 100%;
 

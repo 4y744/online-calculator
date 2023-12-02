@@ -5,31 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/math/greatest-common-divisor.css">
+    <link rel="stylesheet" href="/css/math/common.css">
     <script src="https://kit.fontawesome.com/af2548a023.js" crossorigin="anonymous"></script>
     <script src="/js/math/greatest-common-divisor.js" defer></script>
-    <script src="/navbar.js" defer></script>
-    <script src="/footer.js" defer></script>
+    <script src="/js/content-injector.js" defer></script>
 </head>
 <body>
     <nav></nav>
     <article>
-        <div class="link-tree-container">
-            <a href="/index.html">Home</a>
-            <span> / </span>
-            <a href="/math.html">Math</a>
-            <span> / </span>
-            <a href="/math/calculator.html">Greatest common divisor</a>
-        </div>
+        <div class="page-wrapper">
+            <div class="left">
+                <div class="link-tree-container">
+                    <a href="/index.html">Home</a>
+                    <span> / </span>
+                    <a href="/math.html">Math</a>
+                    <span> / </span>
+                    <a href="/math/greatest-common-divisor.html">Greatest common divisor</a>
+                </div>
+                
+                <h2 class="page-title">Greatest common divisor</h2>
         
-        <p class="page-description">A simple calculator that can do basic mathematic operations.</p>
+                <div class="calculator-container">
+                    <textarea id="input-box" class="input-field" type="text"></textarea>
+                    <div>
+                        <button onclick="calculate()" class="calculate-button">Calculate</button>
+                        <span class="output-label" id="output-label">0</span>
+                    </div>
+                </div>    
+            </div>
 
-        <div class="gcd">
-            <textarea id="input-box" class="input-box" type="text"></textarea>
-            <button onclick="calculate()" class="calculate-button">Calculate</button>
-            <h2 class="output-label" id="output-label">Answer: ---</h2>
+            <div class="right">
+                <h2>What is a greatest common divisor?</h2>
+                <p>A greatest common divisor is the largest number that is able to divide every single member of a set of numbers.</p>
+                <p>
+                It can be determined by using the <a href="https://en.wikipedia.org/wiki/Euclidean_algorithm">Euclidean algorithm.</a> The rules below need to be repeated until the first one is true.
+                </p>
+                <span>a = b => GCD = a</span>
+                <span>a > b => a = a - b</span>
+                <span>b > a => b = b - a</span>
+                <p>Then the process is repeated by using the value of GCD and the next number in the set.</p>
+            </div>
+
         </div>
+
+        <div class="related-container"></div>
     </article>
+
     <footer></footer>
 </body>
 </html>

@@ -17,4 +17,4 @@ let footer = `
 `;
 
 document.head.innerHTML += `<link rel="stylesheet" href="/css/footer.css">`;
-document.getElementsByTagName('footer')[0].innerHTML = footer;
+document.getElementsByTagName('footer')[0].insertAdjacentHTML('afterbegin', footer);

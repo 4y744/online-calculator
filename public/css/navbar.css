@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 nav{
-    --primary-color:#24252A;
-    --secondary-color: #e42821;
     background-color: var(--primary-color);
-    font-family: 'Roboto', sans-serif;
     font-size: 18px;
 
     overflow: hidden;
